@@ -14,7 +14,7 @@ async function getCircuits(page = 1){
 
 async function getDrivers(page =1){
     const rows = await db.query(
-        'select * from drivers'
+        'SELECT * from drivers'
     );
 
     return rows;
